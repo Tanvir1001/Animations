@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+}
+
+.type{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    color: yellow;
+    font-size: 50px;
+    width: 24ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typ-animation 6s steps(24) infinite;
+    border-right: 2px solid yellow;
+}
+
+@keyframes typ-animation{
+    0%{
+        width: 0ch;
+    }
+
+    100%{
+        width: 25ch;
+    }
+}

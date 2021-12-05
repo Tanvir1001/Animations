@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    min-height: 100vh;
+}
+
+.walk {
+	background-image: url(../images/working.jpg);
+	width: 256px;
+	height: 256px;
+	position: absolute;
+    top: 437px;
+    animation: walk 1s steps(6) infinite , walking 10s linear infinite;
+}
+
+@keyframes walk{
+    0%{
+        background-position: 0;
+    }
+
+    100%{
+        background-position: 1536px;
+    }
+}
+
+@keyframes walking{
+    0%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(1400px);
+    }
+}
